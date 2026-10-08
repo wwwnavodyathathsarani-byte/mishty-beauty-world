@@ -1441,3 +1441,64 @@ footer {
     background: #c75b8b;
     color: white;
 }
+/* ===== Center Logo ===== */
+
+.header {
+    position: relative;
+    justify-content: center;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo h2 {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #f09abb;
+    margin-bottom: 6px;
+}
+
+.logo span {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #e5c2d0;
+    text-transform: uppercase;
+}
+
+/* Navigation stays on the right */
+.navbar {
+    position: absolute;
+    right: 7%;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar {
+        position: static;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .logo h2 {
+        font-size: 23px;
+        letter-spacing: 1px;
+    }
+
+    .logo span {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+}
